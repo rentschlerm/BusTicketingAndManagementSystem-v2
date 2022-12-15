@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BusTicketAndManagementSystemModelStoreContainer" CdmEntityContainer="BusTicketAndManagementSystemEntities">
+    <EntitySetMapping Name="tickets">
+      <EntityTypeMapping TypeName="BusTicketAndManagementSystemModel.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+          <ScalarProperty Name="tickettype" ColumnName="tickettype" />
+          <ScalarProperty Name="ticketnumber" ColumnName="ticketnumber" />
+          <ScalarProperty Name="fareprice" ColumnName="fareprice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

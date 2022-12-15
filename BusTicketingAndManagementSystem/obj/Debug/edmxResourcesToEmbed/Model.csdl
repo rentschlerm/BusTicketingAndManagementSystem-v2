@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BusTicketAndManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticketID" />
+    </Key>
+    <Property Name="ticketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tickettype" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ticketnumber" Type="Int32" />
+    <Property Name="fareprice" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="BusTicketAndManagementSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tickets" EntityType="Self.ticket" />
+  </EntityContainer>
+</Schema>
